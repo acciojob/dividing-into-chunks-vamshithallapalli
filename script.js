@@ -7,7 +7,7 @@ const divide = (arr, n) => {
 	let currArr = [];
 	let currSum = 0;
 
-	for(let num: arr){
+	for(let num of arr){
 
 		if(currSum+num > n){
 			result.push(currArr);
@@ -23,7 +23,8 @@ const divide = (arr, n) => {
     if(currArr.length > 0){
 		result.push(currArr);
 	}
-return result;
+    return result;
+	
 };
 
 const n = prompt("Enter n: ");
